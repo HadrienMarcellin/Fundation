@@ -3,8 +3,11 @@
     <ActionBar>
         <Label text="Home" />
     </ActionBar>
-
-    <GridLayout>
-        <!-- Add your page content here -->
-    </GridLayout>
+    
+    <StackLayout orientation="vertical">
+        <label>Foundation</label>
+        <button text="New Game" tap="onTapNewGame"></button>
+        <button text="Settings" tap="onTapSettings"></button>
+        <button text="Profile" tap="onTapProfile"></button>
+    </StackLayout>
 </Page>
