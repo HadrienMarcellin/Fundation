@@ -4,10 +4,19 @@
         <Label text="Home" />
     </ActionBar>
     
-    <StackLayout orientation="vertical">
-        <label>Foundation</label>
-        <button text="New Game" tap="onTapNewGame"></button>
-        <button text="Settings" tap="onTapSettings"></button>
-        <button text="Profile" tap="onTapProfile"></button>
+    <StackLayout height="100%">
+        <ListView height="100%" separatorColor="transparent" items="{{ buttons }}" itemTap="{{ onButtonTap }}">
+            <ListView.itemTemplate>
+                <Button text="{{ text }}" />
+            </ListView.itemTemplate>
+        </ListView>
     </StackLayout>
+    <!--
+    <StackLayout orientation=" vertical">
+        <label>Foundation</label>
+        <button text=" New Game" tap=" onTapNewGame"></button>
+        <button text=" Settings" tap=" onTapSettings"></button>
+        <button text=" Profile" tap=" onTapProfile"></button>
+    </StackLayout>
+    -->
 </Page>
