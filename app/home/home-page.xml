@@ -1,4 +1,4 @@
-<Page navigatingTo="onNavigatingTo" xmlns="http://schemas.nativescript.org/tns.xsd">
+<Page navigatingTo="navigatingTo" xmlns="http://schemas.nativescript.org/tns.xsd">
     
     <ActionBar>
         <Label text="Home" />
@@ -7,16 +7,8 @@
     <StackLayout height="100%">
         <ListView height="100%" separatorColor="transparent" items="{{ buttons }}" itemTap="{{ onButtonTap }}">
             <ListView.itemTemplate>
-                <Button text="{{ text }}" />
+                <Label text="{{ text }}" />
             </ListView.itemTemplate>
         </ListView>
     </StackLayout>
-    <!--
-    <StackLayout orientation=" vertical">
-        <label>Foundation</label>
-        <button text=" New Game" tap=" onTapNewGame"></button>
-        <button text=" Settings" tap=" onTapSettings"></button>
-        <button text=" Profile" tap=" onTapProfile"></button>
-    </StackLayout>
-    -->
 </Page>

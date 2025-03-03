@@ -27,7 +27,7 @@ export class ButtonService {
         return this.buttons
     }
 
-    public getTileByNumber(id: number): ButtonModel {
+    public getButtonByNumber(id: number): ButtonModel {
         return this.buttons.find(button => button.id === id) || undefined
     }
 

@@ -1,7 +1,5 @@
 import { Observable, ObservableArray } from "@nativescript/core";
 import { GameSettings } from "./game-settings";
-import { TraceRaven } from 'nativescript-trace-raven'
-
 
 export class NewGameViewModel extends Observable{
 

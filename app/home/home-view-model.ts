@@ -9,6 +9,8 @@ export class HomeViewModel extends Observable {
   private _settings: GameSettings
 
   constructor() {
+    console.log("welcome to home page")
+
     super()
     this.populateButtons()
     this._settings = new GameSettings()
@@ -24,9 +26,10 @@ export class HomeViewModel extends Observable {
   }
 
   onButtonTap(args: ItemEventData): void {
+    console.log("onButtonTap")
     Frame.topmost().navigate({
-      moduleName: 'new-game/new-game-page',
-      context: { theme: this._settings.theme }
+      moduleName: 'settings/settings-page',
+      context: {}
     })
   }
 }
